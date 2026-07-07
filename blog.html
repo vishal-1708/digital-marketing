@@ -1,257 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SEO Blog | KS Vishal</title>
-
-    <meta name="description"
-        content="SEO Blog by KS Vishal featuring articles about SEO, keyword research, on-page SEO, technical SEO, and digital marketing learning.">
-
-    <meta name="keywords"
-        content="SEO Blog, Keyword Research, On Page SEO, Technical SEO, Digital Marketing, KS Vishal">
-
-    <meta name="author" content="KS Vishal">
-
-    <link rel="stylesheet" href="css/style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Blog | KS Vishal</title>
+<meta name="description" content="A practice log of SEO articles, written while learning keyword research, on-page optimization, and technical SEO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-
-<nav class="navbar">
-
-<h1 class="logo">KS Vishal</h1>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="blog.html">SEO Blog</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> KS Vishal</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">SEO Blog</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 </header>
 
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>SEO Learning Blog</h1>
-
-<p>
-
-Welcome to my SEO practice blog.
-
-Here I publish articles based on my Digital Marketing learning journey,
-keyword research, and practical SEO implementation.
-
-</p>
-
-</div>
-
+<section class="hero" style="padding-bottom:40px;">
+  <div class="container">
+    <div class="eyebrow">SEO Blog</div>
+    <h1 style="max-width:20ch;">Notes from learning SEO by practicing it.</h1>
+    <p class="lede">
+      Each article here is written while actually applying the concept —
+      not copied theory. New posts added as I complete each topic.
+    </p>
+  </div>
 </section>
 
-<!-- BLOG POSTS -->
+<section>
+  <div class="container">
+    <div class="grid grid-2" id="post-list">
 
-<section class="projects">
+      <a href="#post-seo-basics" class="card" style="text-decoration:none;">
+        <span class="tag">On-page SEO</span>
+        <div class="post-meta">July 2026 · 4 min read</div>
+        <h3 class="post-title">Starting My SEO Practice: What I'm Learning First</h3>
+        <p>Why I chose SEO as my first digital marketing skill, and what I'm focusing on before moving to social media marketing.</p>
+      </a>
 
-<h2>Latest Articles</h2>
+      <!--
+        NEXT POST GOES HERE.
+        Copy the <a class="card"> block above, give it a new id
+        in the href (e.g. #post-keyword-research), and add a matching
+        <article> below in the FULL ARTICLES section.
+      -->
 
-<div class="project-container">
-
-<div class="project-card">
-
-<h3>What is SEO?</h3>
-
-<p>
-
-Learn the basics of Search Engine Optimization,
-how search engines work,
-and why SEO is important.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>Keyword Research Guide</h3>
-
-<p>
-
-Understand how to find keywords,
-analyze search intent,
-and select the best keywords for SEO.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>On-Page SEO Checklist</h3>
-
-<p>
-
-Learn title tags,
-meta descriptions,
-heading tags,
-internal links,
-image optimization,
-and more.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>Technical SEO Basics</h3>
-
-<p>
-
-Introduction to technical SEO,
-page speed,
-mobile friendliness,
-XML sitemap,
-robots.txt,
-and indexing.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>Google Search Console</h3>
-
-<p>
-
-My learning notes about indexing,
-performance reports,
-clicks,
-impressions,
-and SEO monitoring.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>SEO Learning Journey</h3>
-
-<p>
-
-Weekly updates about my SEO practice,
-projects,
-mistakes,
-and improvements.
-
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<!-- UPCOMING ARTICLES -->
+<section>
+  <div class="container" style="max-width:70ch;">
 
-<section class="skills">
+    <article class="post-body" id="post-seo-basics">
+      <span class="tag">On-page SEO</span>
+      <div class="post-meta">July 2026 · 4 min read</div>
+      <h2 class="post-title">Starting My SEO Practice: What I'm Learning First</h2>
 
-<h2>Upcoming Blog Topics</h2>
+      <p>
+        I decided to learn SEO before moving into social media marketing,
+        because I wanted one skill built completely before starting the next.
+        Instead of only reading about SEO, I built this website as a live
+        practice project — every change here is a real experiment.
+      </p>
 
-<div class="skills-container">
+      <h3>Why SEO first</h3>
+      <p>
+        SEO forces you to think about structure: how a page is organized,
+        what a heading actually does for both readers and search engines,
+        and why a meta description matters even though most visitors never
+        see the raw HTML behind it.
+      </p>
 
-<div class="skill-card">
-<h3>✔ Image SEO</h3>
-</div>
+      <h3>What I'm focusing on right now</h3>
+      <ul>
+        <li>Writing clear, keyword-relevant headings (H1, H2, H3) instead of vague ones.</li>
+        <li>Keeping meta titles and descriptions accurate and specific to each page.</li>
+        <li>Structuring internal links so pages connect logically (Home → Blog → Projects → Contact).</li>
+        <li>Preparing to connect Google Search Console and Analytics, so I can see real search performance instead of guessing.</li>
+      </ul>
 
-<div class="skill-card">
-<h3>✔ Internal Linking</h3>
-</div>
+      <h3>What's next</h3>
+      <p>
+        Once this site is fully optimized and connected to real analytics
+        data, I'll move on to keyword research using Google Keyword Planner,
+        followed by a technical SEO pass — checking page speed, mobile
+        usability, and crawlability.
+      </p>
+    </article>
 
-<div class="skill-card">
-<h3>✔ External Linking</h3>
-</div>
+    <!--
+      NEXT ARTICLE GOES HERE.
+      <article class="post-body" id="post-your-next-topic">
+        ... same structure as above ...
+      </article>
+    -->
 
-<div class="skill-card">
-<h3>✔ Local SEO</h3>
-</div>
-
-<div class="skill-card">
-<h3>✔ SEO Tools</h3>
-</div>
-
-<div class="skill-card">
-<h3>✔ Google Analytics 4</h3>
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<!-- CTA -->
-
-<section class="contact">
-
-<h2>Why This Blog?</h2>
-
-<p>
-
-This blog is part of my practical Digital Marketing portfolio.
-
-Every article helps me improve my SEO writing,
-keyword research,
-and website optimization skills.
-
-</p>
-
-<a href="projects.html" class="btn">
-
-View My Projects
-
-</a>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 KS Vishal | Digital Marketing Portfolio
-
-</p>
-
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 KS Vishal — Digital Marketing Portfolio</span>
+    <span>Built and maintained by hand, one commit at a time.</span>
+  </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
